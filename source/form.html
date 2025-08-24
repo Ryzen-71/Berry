@@ -200,13 +200,15 @@
                   <input class="field__input" name="address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
                 </label>
               </li>
-              <li class="field-group__item">
-                <span class="field__lead">Пожелания к заказу</span>
-                <textarea class="field__input" name="requests for ordering" placeholder="Чем мы можем вам помочь?"></textarea>
-              </li>
-
             </ul>
           </fieldset>
+          <div class="form__group field-group">
+            <label class="field-group__heading" for="wishes">Пожелания к заказу</label>
+
+            <div class="field">
+              <textarea class="field__input" name="Wishes" id="wishes" rows="5" placeholder="Чем мы можем вам помочь?"></textarea>
+            </div>
+          </div>
           <button class="form__button button" type="submit">Заказать</button>
         </form>
       </div>
