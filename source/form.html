@@ -230,7 +230,11 @@
           <a class="contacts__adress-email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
         </address>
       </div>
-      <img class="contacts__map" src="#" width="320" height="372" alt="Карта к магазину «Barry»">
+      <picture>
+        <source width="553" height="372" type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp 1x ,./images/map-desktop@2x.webp 2x">
+        <source width="768" height="372" type="image/webp" media="(min-width: 768px)" srcset="./images/map-tabletpng@1x.webp 1x, ./images/map-tabletpng@2x.webp 2x ">
+        <img class="contacts__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="372" alt="Карта к магазину «Barry»">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
