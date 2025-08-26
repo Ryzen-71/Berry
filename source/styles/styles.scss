@@ -4,4 +4,27 @@
 @import "./common/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/site-menu.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/advantage.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/news.scss";
+@import "./blocks/news-list.scss";
+@import "./blocks/news-card.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/developer.scss";
+
+// Страница формы
+@import "./blocks/promo.scss";
+@import "./blocks/form.scss";
+@import "./blocks/field-group.scss";
+@import "./blocks/control.scss";
+@import "./blocks/field.scss";
