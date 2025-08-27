@@ -1,1 +1,9 @@
-/* здесь подключите шрифты */
+.button {
+  // color: $color-text-light;
+  color: #e74c1d;
+  font-family: $primary-font-family, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  border: none;
+  text-decoration: none;
+}

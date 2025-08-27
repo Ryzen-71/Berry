@@ -1,1 +1,18 @@
-/* здесь подключите шрифты */
+// .news {
+
+// }
+
+.news__title {
+  @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
+  margin: 0;
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    font-size: 52px;
+    line-height: 58px;
+  }
+}
