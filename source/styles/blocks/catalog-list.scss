@@ -1,1 +1,18 @@
-/* здесь подключите шрифты */
+// .catalog-list {
+
+// }
+
+.catalog-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-card__title {
+  @include title($color-text-accent, $primary-font-family, 28x, 33px, 400);
+  margin: 0;
+}
+
+.catalog-card__inner {
+  font-size: 18px;
+  line-height: 21px;
+}

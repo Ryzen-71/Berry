@@ -1,1 +1,31 @@
-/* здесь подключите шрифты */
+// .news-card {
+
+// }
+
+
+.news-card__title {
+  @include title($color-text-dark, $primary-font-family, 20px, 23px, 400);
+  margin: 0;
+
+
+  @media (min-width: $tablet-screen-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.news-card__description {
+  margin: 0;
+
+  @media (max-width: $mobile-screen-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.news-card__time {
+  @media (max-width: $mobile-screen-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
