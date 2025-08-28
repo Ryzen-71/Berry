@@ -1,1 +1,44 @@
-/* здесь подключите шрифты */
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  .logo__img {
+    opacity: 0;
+  }
+  background-image: url("../../images/logo-hover.svg");
+  background-size: 52px 52px;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+
+.logo:active {
+  background-image: url("../../images/logo-active.svg");
+}
+
+.logo__text {
+  @media (max-width: $mobile-screen-width) {
+    display: none;
+  }
+  color: $color-text-accent;
+  font-family: $logo-text-font-family;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.logo:hover .logo__text,
+.logo:focus .logo__text {
+  color: $color-Related-third;
+}
+
+.logo:active .logo__text {
+  color: $color-Related-fourth;
+}
