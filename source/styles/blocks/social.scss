@@ -1,1 +1,42 @@
-/* здесь подключите шрифты */
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  max-width: 188px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid $color-accent;
+
+  &::before {
+    content: "";
+    mask-image: var(--icon);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    height: 17px;
+    width: 16px;
+    background: $color-accent;
+  }
+}
+
+.social__link--vkontakte {
+  --icon: url("../../icons/stack.svg#vkontakte");
+}
+
+.social__link--youtube {
+  --icon: url("../../icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  --icon: url("../../icons/stack.svg#telegram");
+}

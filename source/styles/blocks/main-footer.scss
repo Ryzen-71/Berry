@@ -1,3 +1,23 @@
 .main-footer {
   background-color: $secondary-background-color-light-alternate;
+  padding-top: 30px;
+}
+
+.main-footer__wrapper {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 9px;
+}
+
+
+.main-footer__social {
+  margin: 0;
+  margin-left: auto;
+}
+
+.main-footer__developer {
+  margin-left: auto;
 }

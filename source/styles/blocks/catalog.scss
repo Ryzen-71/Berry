@@ -1,10 +1,18 @@
-// .catalog {
+.catalog {
+  padding-block: $section-padding-y;
+}
 
-// }
+.catalog__wrapper {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .catalog__title {
   @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
   margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
 
   @media (min-width: $tablet-screen-width) {
     font-size: 48px;
@@ -15,4 +23,8 @@
     font-size: 52px;
     line-height: 58px;
   }
+}
+
+.catalog__list {
+  margin: 0;
 }

@@ -1,6 +1,20 @@
 .developer {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
   color: inherit;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#logo-html-academy");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #000000;
+  }
 }
 
 .developer__website-developer {

@@ -1,1 +1,36 @@
-/* здесь подключите шрифты */
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+  padding-bottom: 54px;
+  width: 264px;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
+  border-radius: 40px;
+}
+
+.catalog-card__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-card__title {
+  @include title($color-text-accent, $primary-font-family, 28px, 33px, 400);
+  margin: 0;
+  order: 2;
+}
+
+.catalog-card__inner {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.catalog-card__img {
+  border-radius: 40px 40px 0 0;
+  order: 1;
+}

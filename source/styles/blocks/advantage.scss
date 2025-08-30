@@ -1,11 +1,29 @@
-// .advantage {
+.advantage {
+  text-align: center;
+  background-image: url("../../images/bg-advantage-mobile@1x.webp"), url("../../images/bg-advantage-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $secondary-background-color-light-alternate;
+  min-height: 640px;
 
-// }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/bg-advantage-mobile@2x.jpg");
+  }
+}
+
+.advantage__wrapper {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
 
 
 .advantage__title {
   @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
   margin: 0;
+  margin-bottom: 32px;
+  width: 265px;
 
   @media (min-width: $tablet-screen-width) {
     font-size: 48px;
@@ -18,13 +36,55 @@
   }
 }
 
+.advantage__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 58px;
+}
 
 .advantage__item {
+  display: grid;
+  width: 208px;
+  grid-template-columns: 32px 1fr;
+  column-gap: 12px;
+  text-align: left;
+  align-items: center;
   font-size: 16px;
   line-height: 19px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    aspect-ratio: 1;
+    background: var(--icon) center/24px no-repeat;
+    // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
+  }
 
   @media (min-width: $tablet-screen-width) {
     font-size: 18px;
     line-height: 22px;
   }
+}
+
+.advantage__item--leaf {
+  --icon: url("../../icons/stack.svg#leaf");
+}
+
+.advantage__item--ice {
+  --icon: url("../../icons/stack.svg#snowflake");
+}
+
+.advantage__item--delivery {
+  --icon: url("../../icons/stack.svg#delivery-car");
+}
+
+
+.advantage__button {
+  width: 264px;
 }

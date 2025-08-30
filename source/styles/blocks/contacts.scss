@@ -1,10 +1,24 @@
-// .contacts {
+.contacts {
+  padding-block: $section-padding-y;
+}
 
-// }
+.contacts__wrapper {
+  background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-left: 26px;
+  // margin-right: 28px;
+  margin-bottom: 24px;
+}
 
 .contacts__title {
   @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
   margin: 0;
+  margin-bottom: 70px;
+  padding-top: 104px;
+  text-align: center;
+
 
   @media (min-width: $tablet-screen-width) {
     font-size: 48px;
@@ -19,8 +33,13 @@
 
 .contacts__subtitle {
   margin: 0;
+  margin-bottom: 34px;
+  font-size: 16px;
   line-height: 19px;
+  text-align: center;
   font-weight: 400;
+  max-width: 266px;
+  padding-right: 10px;
 
 
   @media (min-width: $tablet-screen-width) {
@@ -30,7 +49,11 @@
 }
 
 .contacts__adress {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
   font-style: normal;
+  width: 266px;
 
   @media (max-width: $mobile-screen-width) {
     font-size: 14px;
@@ -46,4 +69,36 @@
 .contacts__adress-email {
   color: inherit;
   text-decoration: none;
+}
+
+
+.contacts__adress-text,
+.contacts__adress-phone,
+.contacts__adress-email {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  // column-gap: 4px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    aspect-ratio: 1;
+    background: var(--icon) center/24px no-repeat;
+    // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
+  }
+}
+
+
+.contacts__adress-text--leaf {
+  --icon: url("../../icons/stack.svg#contacts-leaf");
+}
+
+.contacts__adress-phone--call {
+  --icon: url("../../icons/stack.svg#cotacts-call");
+}
+
+.contacts__adress-email--mail {
+  --icon: url("../../icons/stack.svg#contacts-email");
 }

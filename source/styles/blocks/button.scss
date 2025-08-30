@@ -1,9 +1,14 @@
 .button {
-  // color: $color-text-light;
-  color: #e74c1d;
+  display: inline-block;
+  color: $color-text-light;
   font-family: $primary-font-family, sans-serif;
+  background-color: $primary-button-color-accent;
+  padding: 14px 64px;
   font-size: 20px;
   line-height: 23px;
+  letter-spacing: 1px;
+  min-width: 220px;
   border: none;
+  border-radius: $border-radius-button;
   text-decoration: none;
 }
