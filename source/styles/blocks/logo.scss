@@ -1,13 +1,16 @@
 .logo {
   display: flex;
   align-items: center;
-  width: 52px;
-  height: 52px;
   text-decoration: none;
 
   @media (min-width: $tablet-screen-width) {
     column-gap: 8px;
   }
+}
+
+.log__img {
+  width: 52px;
+  height: 52px;
 }
 
 .logo:hover,
@@ -19,7 +22,7 @@
   background-image: url("../../images/logo-hover.svg");
   background-size: 52px 52px;
   background-repeat: no-repeat;
-  background-position: 0 4px;
+  // background-position: 0 26px;
 }
 
 .logo:active {

@@ -1,5 +1,10 @@
 .news {
   padding-block: $section-padding-y;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-block: 0;
+    padding-top: 100px;
+  }
 }
 
 .news__wrapper {
@@ -7,6 +12,10 @@
   width: 268px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    width: $container-tablet-y;
+  }
 }
 
 .news__title {
@@ -19,6 +28,8 @@
   @media (min-width: $tablet-screen-width) {
     font-size: 48px;
     line-height: 54px;
+    margin-bottom: 72px;
+    padding-top: 114px;
   }
 
   @media (min-width: $desktop-screen-width) {

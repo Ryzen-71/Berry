@@ -8,10 +8,30 @@
   row-gap: 32px;
   padding-top: 32px;
   min-height: 360px;
+
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px 12px;
+    padding: 0;
+    min-height: auto;
+  }
+}
+
+.site-menu__item {
+  @media (min-width: $tablet-screen-width) {
+    min-width: 112px;
+  }
 }
 
 
 .site-menu__link {
   color: inherit;
   text-decoration: none;
+
+  @media (min-width: $tablet-screen-width) {
+    display: inline-flex;
+    padding-block: 5px;
+  }
 }

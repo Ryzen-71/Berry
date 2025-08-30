@@ -1,11 +1,22 @@
 .catalog {
   padding-block: $section-padding-y;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-block: 0;
+    padding-top: 100px;
+  }
 }
 
 .catalog__wrapper {
   width: 268px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    width: $container-tablet-y;
+    padding-left: 67px;
+    padding-right: 69px;
+  }
 }
 
 .catalog__title {

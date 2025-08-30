@@ -10,14 +10,29 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 9px;
+
+  @media (min-width: $tablet-screen-width) {
+    align-items: center;
+    justify-content: space-between;
+    width: $container-tablet-y;
+    min-height: 104px;
+  }
 }
 
 
 .main-footer__social {
   margin: 0;
   margin-left: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__developer {
   margin-left: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    margin: 0;
+  }
 }

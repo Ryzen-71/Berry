@@ -6,6 +6,10 @@
   max-width: 188px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-screen-width) {
+    max-width: 350px;
+  }
 }
 
 .social__link {
@@ -16,6 +20,8 @@
   height: 32px;
   border-radius: 50%;
   border: 1px solid $color-accent;
+  outline: none;
+
 
   &::before {
     content: "";
@@ -26,6 +32,36 @@
     height: 17px;
     width: 16px;
     background: $color-accent;
+  }
+
+
+  &:hover,
+  &:focus-visible {
+    border: 1px solid  $color-Related-third;
+  }
+
+  &:active {
+    border: 1px solid  $color-Related-fourth;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background: $color-Related-third;
+  }
+
+  &:active::before {
+    background: $color-Related-fourth;
+  }
+
+
+  @media (min-width: $tablet-screen-width) {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      height: 25px;
+      width: 25px;
+    }
   }
 }
 
