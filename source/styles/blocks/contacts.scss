@@ -1,6 +1,7 @@
 .contacts {
   padding-block: $section-padding-y;
 
+
   @media (min-width: $tablet-screen-width) {
     padding-block: 0;
     padding-top: 100px;
@@ -8,7 +9,6 @@
 }
 
 .contacts__wrapper {
-  background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
   width: 268px;
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +20,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: $container-tablet-y;
+    width: $container-desktop-y;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    max-width: 550px;
+    margin: 0;
+  }
+}
+
+.contacts__inner {
+  background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
+
+  @media (min-width: $desktop-screen-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: $container-desktop-y;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
   }
 }
 
@@ -41,6 +60,7 @@
   }
 
   @media (min-width: $desktop-screen-width) {
+    padding-top: 0;
     font-size: 52px;
     line-height: 58px;
   }
@@ -124,3 +144,13 @@
 .contacts__adress-email--mail {
   --icon: url("../../icons/stack.svg#contacts-email");
 }
+
+.contacts picture {
+  width: 100%;
+}
+
+// .contacts__map {
+//   @media (min-width: $desktop-screen-width) {
+//     max-width: 550px;
+//   }
+// }

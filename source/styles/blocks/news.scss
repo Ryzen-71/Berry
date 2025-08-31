@@ -16,6 +16,10 @@
   @media (min-width: $tablet-screen-width) {
     width: $container-tablet-y;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    width: $container-desktop-y;
+  }
 }
 
 .news__title {
@@ -35,6 +39,8 @@
   @media (min-width: $desktop-screen-width) {
     font-size: 52px;
     line-height: 58px;
+    margin-bottom: 98px;
+    padding-top: 140px;
   }
 }
 

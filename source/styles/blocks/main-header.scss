@@ -27,6 +27,10 @@
   @media (min-width: $tablet-screen-width) {
     width: 716px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    width: $container-desktop-y;
+  }
 }
 
 

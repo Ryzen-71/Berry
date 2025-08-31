@@ -21,6 +21,16 @@
       background-image: url("../../images/bg-advantage-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-screen-width) {
+    background-image: url("../../images/bg-advantage-desktop@1x.webp"), url("../../images/bg-advantage-desktop@1x.jpg");
+    background-size: cover;
+    min-height: 800px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/bg-advantage-desktop@2x.jpg");
+    }
+  }
 }
 
 
@@ -34,6 +44,11 @@
   @media (min-width: $tablet-screen-width) {
     width: $container-tablet-y;
     padding-top: 142px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: $container-desktop-y;
+    padding-top: 170px;
   }
 }
 
@@ -69,6 +84,11 @@
     width: 532px;
     margin-left: auto;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 502px;
+    margin: 0 0 52px 395px;
+  }
 }
 
 .advantage__item {
@@ -88,6 +108,11 @@
     aspect-ratio: 1;
     background: var(--icon) center/24px no-repeat;
     // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
+
+    @media (min-width: $desktop-screen-width) {
+      width: 35px;
+      background-size: 35px;
+    }
   }
 
   @media (min-width: $tablet-screen-width) {
@@ -112,4 +137,8 @@
 
 .advantage__button {
   width: 264px;
+
+  @media (min-width: $tablet-screen-width) {
+    width: 336px;
+  }
 }

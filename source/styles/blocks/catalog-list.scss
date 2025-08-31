@@ -10,4 +10,10 @@
     flex-flow: row wrap;
     gap: 52px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    gap: 52px 24px;
+  }
 }

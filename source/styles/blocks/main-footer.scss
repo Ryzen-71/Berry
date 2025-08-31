@@ -1,6 +1,10 @@
 .main-footer {
   background-color: $secondary-background-color-light-alternate;
   padding-top: 30px;
+
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 100px;
+  }
 }
 
 .main-footer__wrapper {
@@ -16,6 +20,10 @@
     justify-content: space-between;
     width: $container-tablet-y;
     min-height: 104px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: $container-desktop-y;
   }
 }
 

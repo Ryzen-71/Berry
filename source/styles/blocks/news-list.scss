@@ -10,6 +10,13 @@
     flex-wrap: wrap;
     gap: 34px 20px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 52px 24px;
+    justify-content: flex-start;
+  }
 }
 
 .news-list__title {
@@ -31,6 +38,10 @@
 
   @media (min-width: $tablet-screen-width) {
     max-width: 348px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    min-width: 360px;
   }
 }
 

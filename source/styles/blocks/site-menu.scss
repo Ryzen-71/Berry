@@ -23,6 +23,10 @@
   @media (min-width: $tablet-screen-width) {
     min-width: 112px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    min-width: 132px;
+  }
 }
 
 
