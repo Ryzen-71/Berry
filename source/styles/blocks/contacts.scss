@@ -32,6 +32,11 @@
 .contacts__inner {
   background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
 
+
+  @media (min-width: $tablet-screen-width) {
+    background-size: 296px 42px;
+  }
+
   @media (min-width: $desktop-screen-width) {
     display: flex;
     flex-direction: row-reverse;
@@ -149,8 +154,6 @@
   width: 100%;
 }
 
-// .contacts__map {
-//   @media (min-width: $desktop-screen-width) {
-//     max-width: 550px;
-//   }
-// }
+.contacts__map {
+  width: 100%;
+}

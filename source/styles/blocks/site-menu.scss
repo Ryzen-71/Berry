@@ -38,4 +38,19 @@
     display: inline-flex;
     padding-block: 5px;
   }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-Related-third;
+    transition-duration: $transition-duration;
+  }
+
+  &:active {
+    color: $color-Related-fourth;
+    transition-duration: $transition-duration;
+  }
+}
+
+.site-menu__link--current {
+  color: $color-text-accent;
 }

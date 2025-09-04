@@ -11,4 +11,15 @@
   border: none;
   border-radius: $border-radius-button;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $color-Related-first;
+    transition-duration: $transition-duration;
+  }
+
+  &:active {
+    background: $color-Related-second;
+    transition-duration: $transition-duration;
+  }
 }

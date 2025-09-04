@@ -20,7 +20,7 @@
   height: 32px;
   border-radius: 50%;
   border: 1px solid $color-accent;
-  outline: none;
+  // outline: none;
 
 
   &::before {
@@ -37,20 +37,29 @@
 
   &:hover,
   &:focus-visible {
-    border: 1px solid  $color-Related-third;
+    border-color: $color-Related-third;
+    transition-duration: $transition-duration;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 5px;
   }
 
   &:active {
-    border: 1px solid  $color-Related-fourth;
+    border-color: $color-Related-fourth;
+    transition-duration: $transition-duration;
   }
 
   &:hover::before,
   &:focus-visible::before {
     background: $color-Related-third;
+    transition-duration: $transition-duration;
   }
 
   &:active::before {
     background: $color-Related-fourth;
+    transition-duration: $transition-duration;
   }
 
 

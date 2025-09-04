@@ -1,9 +1,86 @@
 .control {
+  display: grid;
+  grid-template-columns: 24px max-content;
+  align-items: center;
+  column-gap: 12px;
   font-size: 16px;
   line-height: 19px;
+
+  &:has(:disabled) {
+    .control__input:hover {
+      border-color: $color-disabled;
+    }
+  }
 
   @media (min-width: $tablet-screen-width) {
     font-size: 18px;
     line-height: 22px;
   }
+}
+
+.control__input[type="checkbox"],
+.control__input[type="radio"] {
+  display: inline-flex;
+  flex-shrink: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border: $border-checkbox;
+  border-radius: $border-radius-checkbox;
+  outline: none;
+}
+
+.control__input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  display: inline-flex;
+  width: 14px;
+  height: 11px;
+  mask-image: url("../../icons/stack.svg#check-mark-checkbox");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-accent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control__input[type="radio"] {
+  border-radius: 50%;
+}
+
+
+.control__input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: $color-accent;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.control__input[type="checkbox"]:hover,
+.control__input[type="radio"]:hover,
+.control__input[type="radio"]:focus,
+.control__input[type="checkbox"]:focus {
+  border-color: $color-hover;
+  transition-duration: $transition-duration;
+}
+
+.control__input[type="radio"]:checked:hover::after,
+.control__input[type="checkbox"]:checked:hover::after,
+.control__input[type="checkbox"]:checked:focus::after,
+.control__input[type="radio"]:checked:focus::after {
+  background-color: $color-hover;
+  transition-duration: $transition-duration;
+}
+
+
+.control .control__input:disabled {
+  border-color: $color-disabled;
 }

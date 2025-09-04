@@ -1,7 +1,85 @@
-// .form {
+.form {
+  padding-top: 50px;
 
-// }
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 150px;
+    // padding-inline: 71px;
+    // max-width: 624px;
+  }
+}
+
+.form__wrapper {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-screen-width) {
+    width: 624px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 792px;
+  }
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  @media (min-width: $tablet-screen-width) {
+    row-gap: 0;
+  }
+}
 
 .form__group {
   margin: 0;
+}
+
+// .form__group--choose-berries,
+// .form__group--type-storage,
+// .form__group--delivery-ability {
+//   @media (min-width: $tablet-screen-width) {
+//     margin-inline: 71px;
+//   }
+
+//   @media (min-width: $desktop-screen-width) {
+//     margin-inline: 324px;
+//   }
+// }
+
+.form__group--choose-berries {
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.form__group--type-storage {
+  margin-bottom: 48px;
+}
+
+.form__group--delivery-ability {
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.form__group--contacts {
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-screen-width) {
+    align-self: center;
+    // padding-inline: 104px;
+    width: 336px;
+  }
 }

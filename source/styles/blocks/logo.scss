@@ -22,11 +22,13 @@
   background-image: url("../../images/logo-hover.svg");
   background-size: 52px 52px;
   background-repeat: no-repeat;
+  transition-duration: $transition-duration;
   // background-position: 0 26px;
 }
 
 .logo:active {
   background-image: url("../../images/logo-active.svg");
+  transition-duration: $transition-duration;
 }
 
 .logo__text {
@@ -43,8 +45,10 @@
 .logo:hover .logo__text,
 .logo:focus .logo__text {
   color: $color-Related-third;
+  transition-duration: $transition-duration;
 }
 
 .logo:active .logo__text {
   color: $color-Related-fourth;
+  transition-duration: $transition-duration;
 }

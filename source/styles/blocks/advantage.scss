@@ -62,6 +62,10 @@
     padding-left: 150px;
     font-size: 48px;
     line-height: 54px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-screen-width) {

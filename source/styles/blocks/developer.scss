@@ -15,6 +15,27 @@
     mask-position: center;
     background-color: #000000;
   }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-Related-third;
+    transition-duration: $transition-duration;
+
+    &::after {
+      background-color: $color-Related-third;
+      transition-duration: $transition-duration;
+    }
+  }
+
+  &:active {
+    color: $color-Related-fourth;
+    transition-duration: $transition-duration;
+
+    &::after {
+      background-color: $color-Related-fourth;
+      transition-duration: $transition-duration;
+    }
+  }
 }
 
 .developer__website-developer {

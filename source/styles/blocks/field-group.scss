@@ -7,14 +7,175 @@
 .field-group__heading {
   @include title($color-text-accent, $primary-font-family, 20px, 23px, 400);
   margin: 0;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-screen-width) {
+    margin-bottom: 41px;
     font-size: 28px;
     line-height: 33px;
   }
 }
 
+.field-group__heading--location {
+  text-align: center;
+}
+
 .field-group__list {
+  // display: flex;
+  // flex-wrap: wrap;
+  max-width: 268px;
+  margin: 0;
   padding: 0;
   list-style: none;
+  word-break: break-word;
+
+  &.field-group__list--contacts {
+    @media (min-width: $tablet-screen-width) {
+      max-width: 100%;
+    }
+  }
 }
+
+.field-group__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+
+.field-group__list--choose-berries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 25px;
+
+  @media (min-width: $tablet-screen-width) {
+    max-width: 483px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "col-1 col-5 col-4"
+      "col-3 col-2 .";
+    gap: 24px 54px;
+    // Можно попробовать на флексах:добавить flex:wrap и уменьшить сolumn gap
+
+    & .field-group__item--column-1 {
+      grid-area: col-1;
+    }
+
+    & .field-group__item--column-2 {
+      grid-area: col-2;
+    }
+
+    & .field-group__item--column-3 {
+      grid-area: col-3;
+    }
+
+    & .field-group__item--column-4 {
+      grid-area: col-4;
+    }
+
+    & .field-group__item--column-5 {
+      grid-area: col-5;
+    }
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    max-width: 792px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "col-1 col-3 col-2 col-5 col-4";
+  }
+}
+
+
+// .field-group__list--choose-berries .field-group__item {
+//   width: 130px;
+
+//   @media (min-width: $tablet-screen-width) {
+//     width: 141px;
+//   }
+// }
+
+
+.field-group__list--type-storage {
+  display: grid;
+  gap: 23px 54px;
+
+  @media (min-width: $tablet-screen-width) {
+    max-width: 483px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  & .field-group__item {
+    width: 223px;
+  }
+}
+
+.field-group__list--delivery-method {
+  display: grid;
+  gap: 32px 20px;
+  max-width: 255px;
+
+  @media (min-width: $tablet-screen-width) {
+    display: flex;
+    // grid-template-columns: 205px 255px;
+    max-width: 484px;
+    column-gap: 24px;
+
+    // & .field-group__item {
+    //   min-width: 205px;
+    // }
+  }
+}
+
+.field-group__list--contacts {
+  display: grid;
+  row-gap: 36px;
+
+  @media (min-width: $tablet-screen-width) {
+    grid-template-columns: 1fr 1fr;
+    //  grid-template-areas: более удачное решение для построение сетки в донной сетуации.Более лучшее на переполнение
+    grid-template-areas:
+      "name   ."
+      "tel    email"
+      "adress adress";
+    gap: 36px 24px;
+
+    & .field-group__item:first-of-type {
+      grid-area: name;
+      // grid-column: 1/2;
+    }
+
+    & .field-group__item:nth-child(2) {
+      grid-area: tel;
+      // grid-column: 1/2;
+    }
+
+    & .field-group__item:nth-child(3) {
+      grid-area: email;
+      // grid-column: 2/3;
+    }
+
+    & .field-group__item:last-of-type {
+      grid-area: adress;
+      // grid-column: 1/-1;
+    }
+  }
+}
+
+
+.field-group--comment {
+  display: grid;
+  row-gap: 4px;
+
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 40px;
+  }
+}
+
+// .field-group__list.field-group__list--type-storage {
+//   max-width: 202px;
+//   row-gap: 23px;
+// }
+
+// .field-group__list--type-storage .field-group__item {
+//   max-width: 202px;
+// }

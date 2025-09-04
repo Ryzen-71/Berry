@@ -1,1 +1,39 @@
 /* здесь подключите шрифты */
+.field {
+  display: grid;
+  row-gap: 5.5px;
+}
+
+.field__input {
+  font-family: inherit;
+  color: $color-text-dark;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+  padding: 16px 12px;
+  border: $border-input;
+  border-radius: $border-radius-input;
+  outline: none;
+
+  &::placeholder {
+    color: $color-text-grey;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-hover;
+    transition-duration: $transition-duration;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: $color-error;
+    transition-duration: $transition-duration;
+  }
+}
+
+.field__input--error {
+  border-color: $color-error;
+  transition-duration: $transition-duration;
+}
