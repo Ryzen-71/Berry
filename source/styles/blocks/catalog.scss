@@ -1,9 +1,14 @@
 .catalog {
   padding-block: $section-padding-y;
+  padding-top: 57px;
 
   @media (min-width: $tablet-screen-width) {
     padding-block: 0;
     padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    padding-top: 98px;
   }
 }
 
@@ -27,7 +32,7 @@
 .catalog__title {
   @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   text-align: center;
 
   @media (min-width: $tablet-screen-width) {

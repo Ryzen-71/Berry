@@ -1,21 +1,22 @@
 .main-header {
   position: relative;
   background-color: $secondary-background-color-light-alternate;
+  padding-block: 5px;
 
   &::before {
     content: "";
     position: absolute;
     box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
     z-index: 10;
-    top: 50px;
+    // top: 50px;
+    bottom: 0;
     left: 0;
     height: 2px;
     width: 100%;
+  }
 
-    @media (min-width: $tablet-screen-width) {
-      top: auto;
-      bottom: 0;
-    }
+  @media (min-width: $tablet-screen-width) {
+    padding-top: 7px;
   }
 }
 
@@ -76,7 +77,6 @@
   }
 }
 
-
 .main-header__menu {
   background-color: $secondary-background-color-light-alternate;
   margin: 0;
@@ -97,24 +97,44 @@
       left: 0;
       z-index: 2;
     }
+
+    .main-header__nav--nojs & {
+      position: static;
+      display: flex;
+    }
   }
 
-  @media (min-width: $tablet-screen-width) {
-    margin-left: auto;
-  }
+  // @media (min-width: $tablet-screen-width) {
+  //   margin-left: auto;
+  // }
 }
 
 .main-header__inner {
   display: flex;
   justify-content: space-between;
+
+  // @media (min-width: $tablet-screen-width) {
+  //   padding-left: 5px;
+  // }
+}
+
+.main-header__logo {
+  @media (max-width: $mobile-screen-width) {
+    background-position-y: 4px;
+  }
 }
 
 .main-header__nav {
   @media (min-width: $tablet-screen-width) {
     display: grid;
     grid-template-columns: 133px 1fr;
-    min-height: 104px;
+    column-gap: 87px;
+    min-height: 100px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    column-gap: 345px;
   }
 }
 
@@ -122,15 +142,25 @@
 .main-header__toggler {
   align-self: center;
   display: none;
-  height: 50px;
+  height: 60px;
   width: 60px;
   border: none;
   padding: 0;
   mask-image: url("../../icons/stack.svg#button-burger");
   mask-position: 50% 50%;
-  mask-size: 47px 47px;
+  mask-size: 60px 60px;
   mask-repeat: no-repeat;
   background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-Related-third;
+  }
+
+  &:active {
+    background-color: $color-Related-fourth;
+  }
+
 
   @media (max-width: $mobile-screen-width) {
     .main-header__nav--closed & {
@@ -141,6 +171,11 @@
       display: block;
       mask-image: url("../../icons/stack.svg#button-close");
       mask-size: 30px 30px;
+      mask-position: right;
+    }
+
+    .main-header__nav--nojs & {
+      display: none;
     }
   }
 

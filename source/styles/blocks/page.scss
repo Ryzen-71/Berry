@@ -1,3 +1,9 @@
 .page {
   height: 100%;
 }
+
+.page__main-container {
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 100px;
+  }
+}

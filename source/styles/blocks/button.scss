@@ -4,6 +4,7 @@
   font-family: $primary-font-family, sans-serif;
   background-color: $primary-button-color-accent;
   padding: 14px 64px;
+  padding-bottom: 15px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 1px;
@@ -11,6 +12,8 @@
   border: none;
   border-radius: $border-radius-button;
   text-decoration: none;
+  word-break: break-word;
+
 
   &:hover,
   &:focus {

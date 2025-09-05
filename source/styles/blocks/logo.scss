@@ -8,9 +8,14 @@
   }
 }
 
-.log__img {
+.logo__img {
   width: 52px;
   height: 52px;
+
+  @media (min-width: $tablet-screen-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .logo:hover,
@@ -22,13 +27,14 @@
   background-image: url("../../images/logo-hover.svg");
   background-size: 52px 52px;
   background-repeat: no-repeat;
-  transition-duration: $transition-duration;
-  // background-position: 0 26px;
+
+  @media (min-width: $tablet-screen-width) {
+    background-size: 60px 60px;
+  }
 }
 
 .logo:active {
   background-image: url("../../images/logo-active.svg");
-  transition-duration: $transition-duration;
 }
 
 .logo__text {

@@ -6,6 +6,13 @@
   background-repeat: no-repeat;
   background-color: $secondary-background-color-light-alternate;
   min-height: 640px;
+  padding-top: 57px;
+
+  // @media (min-width: $tablet-screen-width) {
+  //   padding-top: 140px;
+
+  // }
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/bg-advantage-mobile@2x.jpg");
@@ -16,6 +23,8 @@
     background-image: url("../../images/bg-advantage-tablet@1x.webp"), url("../../images/bg-advantage-tablet@1x.jpg");
     background-size: cover;
     min-height: 924px;
+    padding-top: 140px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/bg-advantage-tablet@2x.jpg");
@@ -26,6 +35,8 @@
     background-image: url("../../images/bg-advantage-desktop@1x.webp"), url("../../images/bg-advantage-desktop@1x.jpg");
     background-size: cover;
     min-height: 800px;
+    padding-top: 169px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/bg-advantage-desktop@2x.jpg");
@@ -38,17 +49,16 @@
   width: 268px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
 
 
   @media (min-width: $tablet-screen-width) {
     width: $container-tablet-y;
-    padding-top: 142px;
+    // padding-top: 142px;
   }
 
   @media (min-width: $desktop-screen-width) {
     width: $container-desktop-y;
-    padding-top: 170px;
+    // padding-top: 170px;
   }
 }
 
@@ -56,12 +66,13 @@
 .advantage__title {
   @include title($color-text-accent, $secondary-font-family, 36px, 40px, 400);
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-screen-width) {
-    padding-left: 150px;
+    padding-left: 160px;
     font-size: 48px;
     line-height: 54px;
+    margin-bottom: 46px;
 
     br {
       display: none;
@@ -71,6 +82,8 @@
   @media (min-width: $desktop-screen-width) {
     font-size: 52px;
     line-height: 58px;
+    padding-left: 182px;
+    margin-bottom: 51px;
   }
 }
 
@@ -82,16 +95,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 58px;
+  margin-bottom: 64px;
 
   @media (min-width: $tablet-screen-width) {
     width: 532px;
-    margin-left: auto;
+    row-gap: 16px;
+    margin-bottom: 50px;
+    margin-left: 187px;
   }
 
   @media (min-width: $desktop-screen-width) {
     width: 502px;
-    margin: 0 0 52px 395px;
+    margin: 0 0 52px 406px;
   }
 }
 
@@ -108,9 +123,11 @@
   &::before {
     content: "";
     display: block;
-    width: 24px;
+    width: 32px;
     aspect-ratio: 1;
-    background: var(--icon) center/24px no-repeat;
+    background: var(--icon);
+    background-position: center;
+    background-repeat: no-repeat;
     // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
 
     @media (min-width: $desktop-screen-width) {
@@ -136,13 +153,30 @@
 
 .advantage__item--delivery {
   --icon: url("../../icons/stack.svg#delivery-car");
+  padding-top: 5px;
+
+  @media (min-width: $desktop-screen-width) {
+    padding: 0;
+  }
 }
 
 
 .advantage__button {
   width: 264px;
+  padding-block: 17px 16px;
+
+  // padding-top: 17px;
+  // padding-bottom: 16px;
 
   @media (min-width: $tablet-screen-width) {
-    width: 336px;
+    font-size: 28px;
+    line-height: 33px;
+    min-width: 336px;
+    padding-right: 74px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-left: 51px;
+    padding-block: 18px 16px;
   }
 }

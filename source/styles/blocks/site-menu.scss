@@ -13,9 +13,13 @@
   @media (min-width: $tablet-screen-width) {
     display: flex;
     flex-flow: row wrap;
-    gap: 10px 12px;
+    gap: 10px 16px;
     padding: 0;
     min-height: auto;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    column-gap: 29px;
   }
 }
 
@@ -36,7 +40,8 @@
 
   @media (min-width: $tablet-screen-width) {
     display: inline-flex;
-    padding-block: 5px;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
 
   &:hover,

@@ -1,5 +1,5 @@
 .news {
-  padding-block: $section-padding-y;
+  padding-block: 28px;
 
   @media (min-width: $tablet-screen-width) {
     padding-block: 0;
@@ -15,6 +15,7 @@
 
   @media (min-width: $tablet-screen-width) {
     width: $container-tablet-y;
+    background-size: 296px 42px;
   }
 
   @media (min-width: $desktop-screen-width) {
@@ -27,7 +28,8 @@
   margin: 0;
   text-align: center;
   margin-bottom: 64px;
-  padding-top: 96px;
+  padding-top: 100px;
+
 
   @media (min-width: $tablet-screen-width) {
     font-size: 48px;
@@ -39,7 +41,7 @@
   @media (min-width: $desktop-screen-width) {
     font-size: 52px;
     line-height: 58px;
-    margin-bottom: 98px;
+    margin-bottom: 95px;
     padding-top: 140px;
   }
 }

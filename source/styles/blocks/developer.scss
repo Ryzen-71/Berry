@@ -14,10 +14,15 @@
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: #000000;
+
+    @media (min-width: $tablet-screen-width) {
+      width: 26px;
+      height: 32px;
+    }
   }
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     color: $color-Related-third;
     transition-duration: $transition-duration;
 
