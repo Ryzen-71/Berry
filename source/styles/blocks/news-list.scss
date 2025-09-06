@@ -45,8 +45,36 @@
 }
 
 .news-list__item {
+  position: relative;
+  border: 2px solid  $color-accent;
+  border-radius: 40px;
+  display: grid;
+  padding: 30px 18px 54px;
+  // background: url("../../icons/stack.svg#line-leaf") 50% 94%/76px 32px no-repeat;
   // border: 2px solid  $color-accent;
   // border-radius: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 32px;
+    background: url("../../icons/stack.svg#line-leaf") 50% 94%/76px 32px no-repeat;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  @media (min-width: $tablet-screen-width) {
+    min-height: 494px;
+    padding-top: 25px;
+    padding-inline: 34px;
+    word-break: break-word;
+    // background-size: 96px 40px;
+    // background-position: 50% 90%;
+  }
 
   @media (width: $tablet-screen-width) {
     width: 348px;
@@ -65,23 +93,6 @@
   }
 }
 
-.news__list-card {
-  position: relative;
-  border: 2px solid  $color-accent;
-  border-radius: 40px;
-  display: grid;
-  padding: 30px 18px 54px;
-  background: url("../../icons/stack.svg#line-leaf") 50% 94%/76px 32px no-repeat;
-
-  @media (min-width: $tablet-screen-width) {
-    min-height: 494px;
-    padding-top: 25px;
-    padding-inline: 34px;
-    word-break: break-word;
-    background-size: 96px 40px;
-    background-position: 50% 90%;
-  }
-}
 
 .news-list__description {
   min-height: 180px;
