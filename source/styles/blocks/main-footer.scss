@@ -14,13 +14,13 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 9px;
-  padding-block: 6px 20px;
+  padding-block: 11px 20px;
 
   @media (min-width: $tablet-screen-width) {
     display: grid;
     grid-template-columns: 135px 1fr 153px;
     column-gap: 16px;
-    padding-top: 11px;
+    padding-top: 20px;
     align-items: center;
     width: $container-tablet-y;
     min-height: 104px;
@@ -28,7 +28,7 @@
 
   @media (min-width: $desktop-screen-width) {
     width: $container-desktop-y;
-    padding-top: 31px;
+    padding-top: 36px;
     grid-template-columns: 135px 1fr 155px;
   }
 }

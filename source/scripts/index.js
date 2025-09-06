@@ -11,7 +11,11 @@ buttonBurger.addEventListener('click', () => {
   } else {
     headerNav.classList.remove('main-header__nav--opened');
     headerNav.classList.add('main-header__nav--closed');
-
   }
 }
 );
+
+/* в этот файл добавляет скрипт про интерактивную карту*/
+const contactsElement = document.querySelector('.contacts-map-script-wrap');
+
+contactsElement.classList.remove('contacts-map-script-wrap--nojs');

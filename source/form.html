@@ -233,11 +233,20 @@
             <a class="contacts__adress-email contacts__adress-email--mail" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
           </address>
         </div>
-        <picture>
-          <source width="553" height="372" type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp 1x ,./images/map-desktop@2x.webp 2x">
-          <source width="768" height="372" type="image/webp" media="(min-width: 768px)" srcset="./images/map-tabletpng@1x.webp 1x, ./images/map-tabletpng@2x.webp 2x ">
-          <img class="contacts__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="372" alt="Карта к магазину «Barry»">
-        </picture>
+        <div class="contacts-map-script-wrap contacts-map-script-wrap--nojs">
+          <iframe class="contacts-map-script" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1318045914716!2d30.328585377302854!3d59.913359864135614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519e984b1d%3A0x4d5014387b3e983!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk2MDg0!5e0!3m2!1sru!2sru!4v1757144556548!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <noscript>
+          <picture>
+            <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp 1x, ./images/map-desktop@2x.webp 2x">
+            <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x">
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x">
+            <img class="contacts__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="372" alt="Карта к магазину «Barry»">
+          </picture>
+        </noscript>
       </div>
     </section>
   </main>
