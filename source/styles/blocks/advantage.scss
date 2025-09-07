@@ -9,7 +9,7 @@
   padding-top: 57px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/bg-advantage-mobile@2x.jpg");
+    background-image: url("../../images/bg-advantage-mobile@2x.webp"), url("../../images/bg-advantage-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -21,7 +21,7 @@
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/bg-advantage-tablet@2x.jpg");
+      background-image: url("../../images/bg-advantage-tablet@2x.webp"), url("../../images/bg-advantage-tablet@2x.jpg");
     }
   }
 
@@ -33,7 +33,7 @@
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/bg-advantage-desktop@2x.jpg");
+      background-image: url("../../images/bg-advantage-desktop@2x.webp"), url("../../images/bg-advantage-desktop@2x.jpg");
     }
   }
 }
