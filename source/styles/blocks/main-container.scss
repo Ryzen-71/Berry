@@ -1,1 +1,31 @@
 /* здесь подключите шрифты */
+
+
+.main-container__promo {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#line-leaf-two");
+    background-repeat: no-repeat;
+    background-size: 228px 32px;
+    width: 228px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-screen-width) {
+      background-size: 296px 41px;
+      width: 296px;
+      height: 41px;
+      bottom: -35px;
+    }
+
+    @media (min-width: $desktop-screen-width) {
+      bottom: -47px;
+    }
+  }
+}

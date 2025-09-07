@@ -1,6 +1,22 @@
 .field-group {
   padding: 0;
   border: none;
+
+  @media (min-width: $tablet-screen-width) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-left: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+  }
 }
 
 
@@ -14,10 +30,20 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .field-group__heading--location {
-  text-align: center;
+  @media (min-width: $tablet-screen-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    text-align: left;
+  }
 }
 
 .field-group__list {
@@ -40,6 +66,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+
+  @media (min-width: $tablet-screen-width) {
+    row-gap: 24px;
+  }
 }
 
 
@@ -54,7 +84,7 @@
     grid-template-areas:
       "col-1 col-5 col-4"
       "col-3 col-2 .";
-    gap: 24px 54px;
+    gap: 24px 65px;
     // Можно попробовать на флексах:добавить flex:wrap и уменьшить сolumn gap
 
     & .field-group__item--column-1 {
@@ -79,21 +109,16 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    max-width: 792px;
+    max-width: 791px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "col-1 col-3 col-2 col-5 col-4";
+    grid-template-areas: "col-1 col-3 col-5 col-2 col-4";
+    column-gap: 48px;
+
+    & .field-group__item--column-2 {
+      width: 134px;
+    }
   }
 }
-
-
-// .field-group__list--choose-berries .field-group__item {
-//   width: 130px;
-
-//   @media (min-width: $tablet-screen-width) {
-//     width: 141px;
-//   }
-// }
-
 
 .field-group__list--type-storage {
   display: grid;
@@ -102,6 +127,19 @@
   @media (min-width: $tablet-screen-width) {
     max-width: 483px;
     grid-template-columns: repeat(2, 1fr);
+
+    & .field-group__item:nth-child(2) {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    grid-template-columns: 157px 223px 166px;
+    column-gap: 48px;
+
+    & .field-group__item:nth-child(2) {
+      order: 0;
+    }
   }
 
   & .field-group__item {
@@ -116,13 +154,15 @@
 
   @media (min-width: $tablet-screen-width) {
     display: flex;
-    // grid-template-columns: 205px 255px;
     max-width: 484px;
-    column-gap: 24px;
+    column-gap: 106px;
+  }
 
-    // & .field-group__item {
-    //   min-width: 205px;
-    // }
+  @media (min-width: $desktop-screen-width) {
+    max-width: 653px;
+    display: grid;
+    grid-template-columns: 251px 354px;
+    column-gap: 48px;
   }
 }
 
@@ -164,18 +204,15 @@
 
 .field-group--comment {
   display: grid;
-  row-gap: 4px;
+  row-gap: 10px;
 
   @media (min-width: $tablet-screen-width) {
+    row-gap: 5px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 624px;
+    margin-bottom: 50px;
+  }
 }
-
-// .field-group__list.field-group__list--type-storage {
-//   max-width: 202px;
-//   row-gap: 23px;
-// }
-
-// .field-group__list--type-storage .field-group__item {
-//   max-width: 202px;
-// }

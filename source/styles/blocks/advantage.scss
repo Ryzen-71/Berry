@@ -8,12 +8,6 @@
   min-height: 640px;
   padding-top: 57px;
 
-  // @media (min-width: $tablet-screen-width) {
-  //   padding-top: 140px;
-
-  // }
-
-
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/bg-advantage-mobile@2x.jpg");
     background-size: cover;
@@ -53,12 +47,10 @@
 
   @media (min-width: $tablet-screen-width) {
     width: $container-tablet-y;
-    // padding-top: 142px;
   }
 
   @media (min-width: $desktop-screen-width) {
     width: $container-desktop-y;
-    // padding-top: 170px;
   }
 }
 
@@ -128,7 +120,6 @@
     background: var(--icon);
     background-position: center;
     background-repeat: no-repeat;
-    // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
 
     @media (min-width: $desktop-screen-width) {
       width: 35px;
@@ -164,9 +155,6 @@
 .advantage__button {
   width: 264px;
   padding-block: 17px 16px;
-
-  // padding-top: 17px;
-  // padding-bottom: 16px;
 
   @media (min-width: $tablet-screen-width) {
     font-size: 28px;

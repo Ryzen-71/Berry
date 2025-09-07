@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class=" page__main-header main-header main-header--background-image">
+  <header class=" page__main-header main-header main-header--shadow  main-header--background-image main-header--padding-y-form">
     <div class="main-header__wrapper">
       <nav class="main-header__nav main-header__nav--closed main-header__nav--nojs">
         <div class="main-header__inner">
@@ -55,7 +55,7 @@
   </header>
 
   <main class=" page__main-container main-container">
-    <section class="promo">
+    <section class="main-container__promo promo">
       <div class="promo__wrapper">
         <h1 class="promo__title">Закажи ягоды</h1>
         <p class="promo__description">Мы соберем для вас ягоды
@@ -75,56 +75,55 @@
               <li class="field-group__item field-group__item--column-1">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="брусника" name="choose berries">
-                  <span class="control__label">брусника</span>
+                  <span class="control__label control__label--size-s">брусника</span>
                 </label>
                 <label class="control">
                   <input class="control__input" type="checkbox" value="вишня" name="choose berries">
-                  <span class="control__label">вишня</span>
+                  <span class="control__label control__label--size-s">вишня</span>
                 </label>
 
               </li>
               <li class="field-group__item field-group__item--column-2">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="крыжовник" name="choose berries">
-                  <span class="control__label">крыжовник</span>
+                  <span class="control__label control__label--size-s">крыжовник</span>
                 </label>
                 <label class="control">
                   <input class="control__input" type="checkbox" value="малина" name="choose berries">
-                  <span class="control__label">малина</span>
+                  <span class="control__label control__label--size-s">малина</span>
                 </label>
               </li>
 
               <li class="field-group__item field-group__item--column-3">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="голубика" name="choose berries">
-                  <span class="control__label">голубика</span>
+                  <span class="control__label control__label--size-s">голубика</span>
                 </label>
                 <label class="control">
                   <input class="control__input" type="checkbox" value="ежевика" name="choose berries">
-                  <span class="control__label">ежевика</span>
+                  <span class="control__label control__label--size-s">ежевика</span>
                 </label>
 
               </li>
               <li class="field-group__item field-group__item--column-4">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="морошка" name="choose berries" disabled>
-                  <span class="control__label">морошка</span>
+                  <span class="control__label control__label--size-s">морошка</span>
                 </label>
                 <label class="control">
                   <input class="control__input" type="checkbox" value="черника" name="choose berries" disabled>
-                  <span class="control__label">черника</span>
+                  <span class="control__label control__label--size-s">черника</span>
                 </label>
               </li>
 
               <li class="field-group__item field-group__item--column-5">
                 <label class="control">
-                  <input class="control__input" type="checkbox" value="клюква" name="choose berries">
-                  <span class="control__label">клюква</span>
-                </label>
-
-                <label class="control">
                   <input class="control__input" type="checkbox" value="клубника" name="choose berries">
-                  <span class="control__label">клубника</span>
+                  <span class="control__label control__label--size-s">клубника</span>
+                </label>
+                <label class="control">
+                  <input class="control__input" type="checkbox" value="клюква" name="choose berries">
+                  <span class="control__label control__label--size-s">клюква</span>
                 </label>
               </li>
 
@@ -137,19 +136,19 @@
               <li class="field-group__item">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="свежие ягоды" name="type of storage">
-                  <span class="control__label">свежие ягоды</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" value="ягодные миксы" name="type of storage">
-                  <span class="control__label">ягодные миксы</span>
+                  <span class="control__label control__label--size-m">свежие ягоды</span>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="control">
                   <input class="control__input" type="checkbox" value="замороженные ягоды" name="type of storage">
-                  <span class="control__label">замороженные ягоды</span>
+                  <span class="control__label control__label--size-m">замороженные ягоды</span>
+                </label>
+              </li>
+              <li class="field-group__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" value="ягодные миксы" name="type of storage">
+                  <span class="control__label control__label--size-m">ягодные миксы</span>
                 </label>
               </li>
 
@@ -162,13 +161,13 @@
               <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input" type="radio" value="Delivery" name="delivery ability" checked>
-                  <span class="control__lead">Доставка <br>(по СПБ в пределах КАД)</span>
+                  <span class="control__lead control__lead--small">Доставка <br>(по СПБ в пределах КАД)</span>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input" type="radio" value="Pickup" name="delivery ability">
-                  <span class="control__lead">Самовывоз <br> (Набережная Обводного канала, 101)</span>
+                  <span class="control__lead control__lead--big">Самовывоз <br> (Набережная Обводного канала, 101)</span>
                 </label>
               </li>
             </ul>
@@ -179,46 +178,48 @@
             <ul class="field-group__list  field-group__list--contacts">
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Имя:*</span>
+                  <span class="field__lead">Имя<sup>*</sup></span>
                   <input class="field__input" name="name" type="text" placeholder="Как к вам обращаться?" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Телефон*</span>
+                  <span class="field__lead">Телефон<sup>*</sup></span>
                   <input class="field__input" name="telephone" type="tel" placeholder="+7 ххх ххх хх хх" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Email*</span>
+                  <span class="field__lead">Email<sup>*</sup></span>
                   <input class="field__input" name="email" type="email" placeholder="Ваш email" required>
                 </label>
               </li>
               <li class="field-group__item">
                 <label class="field">
-                  <span class="field__lead">Адрес*</span>
-                  <input class="field__input" name="address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
+                  <span class="field__lead ">Адрес<sup>*</sup></span>
+                  <input class="field__input field__input--size-m" name="address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
                 </label>
               </li>
             </ul>
           </fieldset>
 
           <div class="form__group field-group  field-group--comment">
-            <label class="field__lead" for="wishes">Пожелания к заказу</label>
-            <div class="field">
-              <textarea class="field__input" name="Wishes" id="wishes" rows="5" placeholder="Чем мы можем вам помочь?"></textarea>
+            <label class="field" for="wishes">
+              <span class="field__lead">Пожелания к заказу</span>
+            </label>
+            <div class="field field-inner">
+              <textarea class="field__input" name="Wishes" id="wishes" placeholder="Чем мы можем вам помочь?"></textarea>
             </div>
           </div>
-          <button class="form__button button" type="submit">Заказать</button>
+          <button class="form__button button " type="submit">Заказать</button>
         </form>
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts contacts--padding-y-form">
       <div class="contacts__inner">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Где забрать
+          <h2 class="contacts__title contacts__title--padding-y-form ">Где забрать
             ягоды?</h2>
 
           <address class="contacts__adress">
@@ -250,7 +251,7 @@
       </div>
     </section>
   </main>
-  <footer class="page__main-footer main-footer">
+  <footer class="page__main-footer main-footer  main-footer--padding-y-form">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo" href="#">
         <img class="logo__img" src="./images/logo-berry.svg" width="52" height="52" alt="Логотип «Barry»">

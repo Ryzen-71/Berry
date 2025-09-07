@@ -1,10 +1,9 @@
 .form {
-  padding-top: 50px;
+  padding-top: 83px;
+  padding-bottom: 58px;
 
   @media (min-width: $tablet-screen-width) {
-    padding-top: 150px;
-    // padding-inline: 71px;
-    // max-width: 624px;
+    padding-top: 108px;
   }
 }
 
@@ -32,21 +31,16 @@
   }
 }
 
+.form__body--inner {
+  @media (min-width: $tablet-screen-width) {
+    padding-left: 71px;
+  }
+}
+
 .form__group {
   margin: 0;
 }
 
-// .form__group--choose-berries,
-// .form__group--type-storage,
-// .form__group--delivery-ability {
-//   @media (min-width: $tablet-screen-width) {
-//     margin-inline: 71px;
-//   }
-
-//   @media (min-width: $desktop-screen-width) {
-//     margin-inline: 324px;
-//   }
-// }
 
 .form__group--choose-berries {
   @media (min-width: $tablet-screen-width) {
@@ -58,15 +52,16 @@
   }
 }
 
-.form__group--type-storage {
-  margin-bottom: 48px;
-}
 
 .form__group--delivery-ability {
-  margin-bottom: 45px;
-
   @media (min-width: $tablet-screen-width) {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
+  }
+}
+
+.form__group--type-storage {
+  @media (min-width: $tablet-screen-width) {
+    margin-bottom: 48px;
   }
 }
 
@@ -74,12 +69,21 @@
   @media (min-width: $tablet-screen-width) {
     margin-bottom: 36px;
   }
+
+  @media (min-width: $desktop-screen-width) {
+    width: 624px;
+  }
 }
 
 .form__button {
+  width: 264px;
+  padding: 17px 64px 16px 58px;
+
   @media (min-width: $tablet-screen-width) {
     align-self: center;
-    // padding-inline: 104px;
-    width: 336px;
+    font-size: 28px;
+    line-height: 33px;
+    min-width: 336px;
+    padding-right: 59px;
   }
 }

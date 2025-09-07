@@ -25,7 +25,6 @@
   width: 204px;
   margin: 0 auto 20px;
   text-align: center;
-  // padding-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,9 +49,7 @@
   border-radius: 40px;
   display: grid;
   padding: 30px 18px 54px;
-  // background: url("../../icons/stack.svg#line-leaf") 50% 94%/76px 32px no-repeat;
-  // border: 2px solid  $color-accent;
-  // border-radius: 40px;
+
 
   &::before {
     content: "";
@@ -64,6 +61,13 @@
     top: 86%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: $tablet-screen-width) {
+      width: 96px;
+      height: 40px;
+      background-size: 96px 40px;
+      top: 83%;
+    }
   }
 
 
@@ -72,8 +76,6 @@
     padding-top: 25px;
     padding-inline: 34px;
     word-break: break-word;
-    // background-size: 96px 40px;
-    // background-position: 50% 90%;
   }
 
   @media (width: $tablet-screen-width) {
@@ -92,7 +94,6 @@
     min-width: 360px;
   }
 }
-
 
 .news-list__description {
   min-height: 180px;
@@ -167,22 +168,8 @@
 .news-list__time {
   position: relative;
   justify-self: end;
-  // padding-bottom: 8px;
   margin-bottom: 16px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   width: 76px;
-  //   height: 32px;
-  //   bottom: -37px;
-  //   left: -64px;
-  //   background-image: url("../../icons/stack.svg#line-leaf");
-  //   background-position: bottom;
-  //   background-repeat: no-repeat;
-  //   background-size: 76px 32px;
-  // }
 
   @media (max-width: $mobile-screen-width) {
     font-size: 14px;

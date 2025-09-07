@@ -1,6 +1,7 @@
 .control {
   display: grid;
   grid-template-columns: 24px max-content;
+  max-width: 123px;
   align-items: center;
   column-gap: 12px;
   font-size: 16px;
@@ -29,6 +30,7 @@
   border: $border-checkbox;
   border-radius: $border-radius-checkbox;
   outline: none;
+  margin: 0;
 }
 
 .control__input[type="checkbox"]:checked::after {
@@ -81,6 +83,39 @@
 }
 
 
+.control__label--size-s {
+  max-width: 87px;
+
+  @media (min-width: $tablet-screen-width) {
+    max-width: 98px;
+  }
+}
+
+.control__label--size-m {
+  max-width: 190px;
+}
+
+
 .control .control__input:disabled {
   border-color: $color-disabled;
+}
+
+.control__lead--small {
+  max-width: 150px;
+
+  @media (min-width: $tablet-screen-width) {
+    max-width: 169px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    max-width: none;
+  }
+}
+
+.control__lead--big {
+  max-width: 219px;
+
+  @media (min-width: $desktop-screen-width) {
+    max-width: none;
+  }
 }
