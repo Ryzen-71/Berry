@@ -37,6 +37,10 @@
   background-image: url("../../images/logo-active.svg");
 }
 
+.logo--no-pointer-events {
+  pointer-events: none;
+}
+
 .logo__text {
   @media (max-width: $mobile-screen-width) {
     display: none;

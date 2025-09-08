@@ -1,6 +1,6 @@
 .advantage {
   text-align: center;
-  background-image: url("../../images/bg-advantage-mobile@1x.webp"), url("../../images/bg-advantage-mobile@1x.jpg");
+  background-image: url("../../images/bg-advantage-mobile@1x.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,31 +9,31 @@
   padding-top: 57px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/bg-advantage-mobile@2x.webp"), url("../../images/bg-advantage-mobile@2x.jpg");
+    background-image: url("../../images/bg-advantage-mobile@2x.webp");
     background-size: cover;
   }
 
   @media (min-width: $tablet-screen-width) {
-    background-image: url("../../images/bg-advantage-tablet@1x.webp"), url("../../images/bg-advantage-tablet@1x.jpg");
+    background-image: url("../../images/bg-advantage-tablet@1x.webp");
     background-size: cover;
     min-height: 924px;
     padding-top: 140px;
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/bg-advantage-tablet@2x.webp"), url("../../images/bg-advantage-tablet@2x.jpg");
+      background-image: url("../../images/bg-advantage-tablet@2x.webp");
     }
   }
 
   @media (min-width: $desktop-screen-width) {
-    background-image: url("../../images/bg-advantage-desktop@1x.webp"), url("../../images/bg-advantage-desktop@1x.jpg");
+    background-image: url("../../images/bg-advantage-desktop@1x.webp");
     background-size: cover;
     min-height: 800px;
     padding-top: 169px;
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/bg-advantage-desktop@2x.webp"), url("../../images/bg-advantage-desktop@2x.jpg");
+      background-image: url("../../images/bg-advantage-desktop@2x.webp");
     }
   }
 }
