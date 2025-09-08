@@ -155,12 +155,13 @@
 .advantage__button {
   width: 264px;
   padding-block: 17px 16px;
+  padding-left: 59px;
 
   @media (min-width: $tablet-screen-width) {
     font-size: 28px;
     line-height: 33px;
     min-width: 336px;
-    padding-right: 74px;
+    padding-right: 67px;
   }
 
   @media (min-width: $desktop-screen-width) {
