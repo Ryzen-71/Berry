@@ -1,6 +1,5 @@
 .main-footer {
   background-color: $secondary-background-color-light-alternate;
-  padding-top: 30px;
 
   @media (min-width: $tablet-screen-width) {
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 .main-footer--padding-y-form {
-  padding-top: 34px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-screen-width) {
     padding-top: 0;
@@ -36,7 +35,7 @@
 
   @media (min-width: $desktop-screen-width) {
     width: $container-desktop-y;
-    padding-top: 36px;
+    padding-top: 25px;
     grid-template-columns: 135px 1fr 155px;
   }
 }

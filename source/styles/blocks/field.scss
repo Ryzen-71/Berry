@@ -43,6 +43,8 @@
 
 .field__input--textarea-adress-size {
   height: 88px;
+  resize: none;
+
 
   @media (min-width: $tablet-screen-width) {
     height: 52px;
@@ -51,6 +53,8 @@
 
 .field__input--textarea-wishes-size {
   height: 124px;
+  resize: none;
+
 
   @media (min-width: $tablet-screen-width) {
     height: 144px;
@@ -88,12 +92,3 @@
   border-color: $color-error;
   transition-duration: $transition-duration;
 }
-
-// .field-inner textarea {
-//   display: block;
-//   height: 124px;
-
-//   @media (min-width: $tablet-screen-width) {
-//     height: 143px;
-//   }
-// }

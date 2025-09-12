@@ -29,7 +29,7 @@
     background-image: url("../../images/bg-advantage-desktop@1x.webp");
     background-size: cover;
     min-height: 800px;
-    padding-top: 169px;
+    padding-top: 174px;
 
 
     @media (min-resolution: 2dppx) {
@@ -91,12 +91,13 @@
 
   @media (min-width: $tablet-screen-width) {
     width: 532px;
-    row-gap: 16px;
-    margin-bottom: 50px;
+    row-gap: 20px;
+    margin-bottom: 46px;
     margin-left: 187px;
   }
 
   @media (min-width: $desktop-screen-width) {
+    row-gap: 17px;
     width: 502px;
     margin: 0 0 52px 406px;
   }
@@ -146,7 +147,8 @@
   --icon: url("../../icons/stack.svg#delivery-car");
   padding-top: 5px;
 
-  @media (min-width: $desktop-screen-width) {
+
+  @media (min-width: $tablet-screen-width) {
     padding: 0;
   }
 }

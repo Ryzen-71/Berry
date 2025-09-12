@@ -24,8 +24,6 @@
   width: 268px;
   margin-left: auto;
   margin-right: auto;
-  // margin-left: 26px;
-  // margin-right: 28px;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-screen-width) {
@@ -175,7 +173,6 @@
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: #000000;
-    // background: url("../../icons/stack.svg#line-leaf-two") 50% 0%/228px 32px no-repeat;
   }
 
   &:not(.contacts__adress-text):hover,
@@ -203,17 +200,14 @@
 
 .contacts__adress-text--leaf {
   --icon: url("../../icons/stack.svg#contacts-leaf");
-  // background-size: 15px 23px;
 }
 
 .contacts__adress-phone--call {
   --icon: url("../../icons/stack.svg#cotacts-call");
-  // background-size: 15px 19px;
 }
 
 .contacts__adress-email--mail {
   --icon: url("../../icons/stack.svg#contacts-email");
-  // background-size: 18px 14px;
 }
 
 .contacts-map-script {

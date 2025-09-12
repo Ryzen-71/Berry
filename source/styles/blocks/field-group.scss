@@ -47,8 +47,6 @@
 }
 
 .field-group__list {
-  // display: flex;
-  // flex-wrap: wrap;
   max-width: 268px;
   margin: 0;
   padding: 0;
@@ -85,7 +83,6 @@
       "col-1 col-5 col-4"
       "col-3 col-2 .";
     gap: 24px 65px;
-    // Можно попробовать на флексах:добавить flex:wrap и уменьшить сolumn gap
 
     & .field-group__item--column-1 {
       grid-area: col-1;
@@ -134,17 +131,14 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    // grid-template-columns: 157px 223px 166px;
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 48px;
+    max-width: 642px;
+
 
     & .field-group__item:nth-child(2) {
       order: 0;
     }
-  }
-
-  & .field-group__item {
-    width: 223px;
   }
 }
 
@@ -155,15 +149,13 @@
 
   @media (min-width: $tablet-screen-width) {
     display: flex;
+    flex-wrap: wrap;
     max-width: 484px;
     column-gap: 24px;
   }
 
   @media (min-width: $desktop-screen-width) {
     max-width: 653px;
-    // grid-template-columns: 251px 354px;
-    display: flex;
-    flex-wrap: wrap;
     column-gap: 48px;
   }
 }
@@ -174,7 +166,6 @@
 
   @media (min-width: $tablet-screen-width) {
     grid-template-columns: 1fr 1fr;
-    //  grid-template-areas: более удачное решение для построение сетки в донной сетуации.Более лучшее на переполнение
     grid-template-areas:
       "name ."
       "tel  email";
@@ -182,23 +173,15 @@
 
     & .field-group__item:first-of-type {
       grid-area: name;
-      // grid-column: 1/2;
     }
 
     & .field-group__item:nth-child(2) {
       grid-area: tel;
-      // grid-column: 1/2;
     }
 
     & .field-group__item:nth-child(3) {
       grid-area: email;
-      // grid-column: 2/3;
     }
-
-    // & .field-group__item:last-of-type {
-    //   grid-area: adress;
-    //   // grid-column: 1/-1;
-    // }
   }
 }
 

@@ -3,7 +3,13 @@
 }
 
 .page__main-container {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-screen-width) {
     margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-screen-width) {
+    margin-bottom: 111px;
   }
 }

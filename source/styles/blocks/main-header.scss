@@ -11,7 +11,6 @@
     position: absolute;
     box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
     z-index: 10;
-    // top: 50px;
     bottom: 0;
     left: 0;
     height: 2px;
@@ -64,7 +63,7 @@
 
   @media (min-width: $desktop-screen-width) {
     background-image: url("../../images/bg-image-header-desktop@1x.webp");
-    height: 200px;
+    height: 203px;
 
 
     @media (min-resolution: 2dppx) {
@@ -120,10 +119,6 @@
       display: flex;
     }
   }
-
-  // @media (min-width: $tablet-screen-width) {
-  //   margin-left: auto;
-  // }
 }
 
 .main-header__inner {
