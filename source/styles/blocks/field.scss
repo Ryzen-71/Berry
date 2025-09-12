@@ -37,6 +37,22 @@
   }
 }
 
+.field__input--textarea-adress-size {
+  height: 88px;
+
+  @media (min-width: $tablet-screen-width) {
+    height: 52px;
+  }
+}
+
+.field__input--textarea-wishes-size {
+  height: 124px;
+
+  @media (min-width: $tablet-screen-width) {
+    height: 144px;
+  }
+}
+
 .field__input--size-m {
   padding-bottom: 53px;
 

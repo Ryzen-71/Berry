@@ -197,21 +197,27 @@
                   <input class="field__input" name="email" type="email" placeholder="Ваш email" required>
                 </label>
               </li>
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead ">Адрес<sup>*</sup></span>
-                  <input class="field__input field__input--size-m" name="address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
-                </label>
-              </li>
+
             </ul>
           </fieldset>
 
           <div class="form__group field-group  field-group--comment">
-            <label class="field" for="wishes">
-              <span class="field__lead">Пожелания к заказу</span>
-            </label>
-            <div class="field field-inner">
-              <textarea class="field__input" name="Wishes" id="wishes" placeholder="Чем мы можем вам помочь?"></textarea>
+            <div class="field">
+              <label for="address">
+                <span class="field__lead">Адрес<sup>*</sup></span>
+              </label>
+              <div class="field">
+                <textarea class="field__input field__input--textarea-adress-size" name="address" id="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="wishes">
+                <span class="field__lead">Пожелания к заказу</span>
+              </label>
+              <div class="field">
+                <textarea class="field__input field__input--textarea-wishes-size" name="Wishes" id="wishes" placeholder="Чем мы можем вам помочь?"></textarea>
+              </div>
             </div>
           </div>
           <button class="form__button button " type="submit">Заказать</button>
@@ -281,9 +287,9 @@
 
       <a class="main-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         <span class="developer__website-developer">HTML Academy</span>
-        <svg class="main-footer__devs-icon" width="20" height="24">
-          <use xlink-href="../icons/stack.svg#logo-html-academy"></use>
-        </svg>
+        <!-- <svg class="main-footer__devs-icon" width="20" height="24"> -->
+        <!-- <use xlink-href="../icons/stack.svg#logo-html-academy"></use> -->
+        <!-- </svg> -->
       </a>
     </div>
   </footer>

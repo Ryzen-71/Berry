@@ -176,9 +176,8 @@
     grid-template-columns: 1fr 1fr;
     //  grid-template-areas: более удачное решение для построение сетки в донной сетуации.Более лучшее на переполнение
     grid-template-areas:
-      "name   ."
-      "tel    email"
-      "adress adress";
+      "name ."
+      "tel  email";
     gap: 36px 24px;
 
     & .field-group__item:first-of-type {
@@ -196,20 +195,20 @@
       // grid-column: 2/3;
     }
 
-    & .field-group__item:last-of-type {
-      grid-area: adress;
-      // grid-column: 1/-1;
-    }
+    // & .field-group__item:last-of-type {
+    //   grid-area: adress;
+    //   // grid-column: 1/-1;
+    // }
   }
 }
 
 
 .field-group--comment {
   display: grid;
-  row-gap: 10px;
+  row-gap: 36px;
 
   @media (min-width: $tablet-screen-width) {
-    row-gap: 5px;
+    row-gap: 36px;
     margin-bottom: 40px;
   }
 
