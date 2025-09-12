@@ -76,11 +76,7 @@
 
 .main-header--padding-y-form {
   @media (min-width: $tablet-screen-width) {
-    padding-top: 3px;
-  }
-
-  @media (min-width: $desktop-screen-width) {
-    padding-top: 6px;
+    padding-top: 8px;
   }
 }
 

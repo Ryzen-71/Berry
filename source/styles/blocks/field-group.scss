@@ -134,7 +134,8 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    grid-template-columns: 157px 223px 166px;
+    // grid-template-columns: 157px 223px 166px;
+    display: flex;
     column-gap: 48px;
 
     & .field-group__item:nth-child(2) {
@@ -155,13 +156,14 @@
   @media (min-width: $tablet-screen-width) {
     display: flex;
     max-width: 484px;
-    column-gap: 106px;
+    column-gap: 24px;
   }
 
   @media (min-width: $desktop-screen-width) {
     max-width: 653px;
-    display: grid;
-    grid-template-columns: 251px 354px;
+    // grid-template-columns: 251px 354px;
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 48px;
   }
 }

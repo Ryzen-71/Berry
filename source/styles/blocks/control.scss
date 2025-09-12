@@ -14,8 +14,12 @@
   }
 
   @media (min-width: $tablet-screen-width) {
+    &.control--choose-berries {
+      max-width: 123px;
+    }
     font-size: 18px;
     line-height: 22px;
+    max-width: none;
   }
 }
 
@@ -108,7 +112,7 @@
   }
 
   @media (min-width: $desktop-screen-width) {
-    max-width: none;
+    max-width: 215px;
   }
 }
 
@@ -116,6 +120,6 @@
   max-width: 219px;
 
   @media (min-width: $desktop-screen-width) {
-    max-width: none;
+    max-width: 318px;
   }
 }
